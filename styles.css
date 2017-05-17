@@ -1,0 +1,51 @@
+body{
+    background-color: blue;
+}
+
+section{
+    max-width: 1080px;
+}
+
+header{
+    color: white;
+    background-color: white;
+    text-align: center;
+}
+
+header img{
+    height: 60px;
+}
+
+footer{
+    color: white;
+    background-color: white;
+    display: flex;
+}
+
+footer img{
+    height: 60px;
+}
+
+ul{
+    margin-right: 3%;
+    font-size: 13px;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+.li-align{
+    margin-right: 5%;
+}
+
+.div-menu-logo{
+    display: flex;
+    margin-bottom: 1%;
+    background-color: grey;
+}
+
+.banner img{
+    width: 100%;
+}
