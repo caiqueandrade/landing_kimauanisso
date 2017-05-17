@@ -100,6 +100,29 @@ button{
     width: 100%;
 }
 
+.linha{
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 1280px;
+  font-size: 15px;
+  display: flex;
+  background-color: #e2e2e2;
+}
+
+.linha div img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.linha div{
+    padding: 10px;
+}
+
+.separador{
+  margin-right: 450px;
+}
+
 .input-name{
     width: 230px;
 }
@@ -109,8 +132,35 @@ button{
 }
 
 .div-maps{
-    display: inline;
     margin-left: 11.9%;
+}
+
+.div-footer-logo{
+    margin-bottom: 1%;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.div-footer-logo img{
+  height: 40px;
+}
+
+.trofeus{
+  display: flex;
+}
+
+.trofeus div{
+  margin: auto;
+  padding: 5%
+}
+
+.trofeus2{
+  display: flex;
+}
+
+.trofeus2 div{
+  margin: auto;
+  padding: 5%
 }
 
 #section-contato{
