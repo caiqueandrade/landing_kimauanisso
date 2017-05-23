@@ -1,203 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Início do Header -->
-        <header>
-            <section>
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="background" id="home">
+            <section class="menu">
                 <div class="div-menu-logo">
-                    <img src="images/logo-kimauanisso.png" alt="logo kimauanisso">
-                    <img src="images/logo-maua.png" alt="logo kimauanisso">
-                    <img src="images/logo-robocore.png" alt="logo kimauanisso">
+                    <img class="menu-logo" src="images/logo-kimauanisso.png" alt="logo">
                 </div>
 
                 <div class="div-menu-nav">
                     <ul>
-                        <a href="index.html"><li class="li-align">HOME</li></a>
-                        <a href=""><li class="li-align">SOBRE</li></a>
-                        <a href=""><li class="li-align">PORTIFÓLIO</li></a>
-                        <a href="https://www.instagram.com/caiqueandrade_/"><li class="li-align">FOTOS</li></a>
-                        <a href="contato.html"><li>CONTATO</li></a>
+                        <!-- <li><a href="index2.html">HOME</a></li> -->
+                        <li><a href="#modalidades">CATEGORIAS</a></li>
+                        <li><a href="#premios">PRÊMIOS</a></li>
+                        <li><a href="#video">VÍDEO</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
                     </ul>
                 </div>
             </section>
-        </header>
-
-
-        <!-- Section do Slide de Banners -->
-        <section>
-            <div class="banner">
-                <img src="images/banner-drone.jpg" alt="drone">
-            </div>
         </section>
+    </header>
 
 
-        <!-- Início das modalidades -->
-        <section class="Modalidades">
-            <div class="linha">
-                <div>
-                    <img src="images\modalidade.png" alt="modalidade1">
-                </div>
-                <div>
-                    <span>Descrição</span>
-                    <p>Detalhe</p>
-                </div>
+    <!-- INÍCIO DA SECTION TÍTULO -->
+    <section class="section-titulo">
+        <div class="div-texto">
+            <pre class="slider-p active fade">
+ Equipe
+ Kimauánisso
+ - Robotics Team
+ website.
+            </pre>
 
-                <div class="separador"></div>
-                    <div>
-                        <img src="images\modalidade.png" alt="modalidade2">
-                    </div>
-                    <div>
-                        <span>Descrição</span>
-                        <p>Detalhe</p>
-                    </div>
+            <pre class="slider-p fade">
+                           Equipe
+                      Kimauánisso
+                  Robotics Team -
+                         website.
+            </pre>
+
+            <pre class="slider-p fade">
+        Equipe
+              Kimauánisso
+        Robotics - Team
+            website.
+            </pre>
+
+        <div id="progress">
+            <div id="bar"></div>
+        </div>
+
+            <!-- <h1 class="texto espacamento">Equipe</h1>
+            <h1 class="texto">Kimauánisso</h1>
+            <h1 class="texto">- Robotics Team</h1>
+            <h1 class="texto">website.</h1> -->
+
+            <!-- <h1 class="texto espacamento">Invest</h1>
+            <h1 class="texto">American</h1>
+            <h1 class="texto">- Robotics Group</h1>
+            <h1 class="texto">website.</h1> -->
+        </div>
+    </section>
+
+
+    <!-- INÍCIO DA SECTION SLIDER -->
+    <!-- <section class="section-slider">
+    <div class="div-images">
+    <h1 class="banner-texto active-texto">Winter Challenge 17</h1>
+    <h1 class="banner-texto">Teste2</h1>
+    <h1 class="banner-texto">Teste3</h1>
+    <img class="image active" src="images/banner-robot-fight.jpg" alt="foto 1">
+    <img class="image" src="images/banner-halo.jpg" alt="foto 2">
+    <img class="image" src="images/banner.jpg" alt="foto 3">
+</div>
+</section> -->
+
+
+<!-- INÍCIO DA SECTION MODALIDADES -->
+<section class="section-modalidades" id="modalidades">
+    <h2>CATEGORIAS</h2>
+    <div class="div-modalidades">
+        <div>
+            <img src="images/poster01.jpg" alt="imagem poster01">
+            <p class="p-titulo">Muscle Wire Challenge</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+        <div>
+            <img src="images/poster02.jpg" alt="imagem poster02">
+            <p class="p-titulo">Sumô LEGO® 1kg</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+        <div>
+            <img src="images/poster03.jpg" alt="imagem poster03">
+            <p class="p-titulo">Fire-Fighting</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- INÍCIO DA SECTION PRÊMIOS -->
+<section class="section-premios" id="premios">
+    <h2>PRÊMIOS</h2>
+    <div class="div-premios">
+        <div>
+            <img src="images/poster01.jpg" alt="imagem poster01">
+            <p class="p-titulo">Muscle Wire Challenge</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+        <div>
+            <img src="images/poster02.jpg" alt="imagem poster02">
+            <p class="p-titulo">Sumô LEGO® 1kg</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+        <div>
+            <img src="images/poster03.jpg" alt="imagem poster03">
+            <p class="p-titulo">Fire-Fighting</p>
+            <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
+        </div>
+    </div>
+</section>
+
+<!-- INÍCIO DA SECTION VIDEO -->
+<section class="section-video" id="video">
+    <iframe src="https://player.vimeo.com/video/73822107" width="1302" height="732" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- INÍCIO DA SECTION CONTATO -->
+<section class="contato-background" id="contato">
+    <div class="div-form">
+        <form>
+            <h2>CONTATO</h2>
+            <!-- <label>Nome:</label> -->
+            <p>Entre em contato para mais informações</p>
+            <div>
+                <input placeholder="Nome" class="input-name">
             </div>
 
-            <div class="linha">
-                <div>
-                    <img src="images\modalidade.png" alt="modalidade1">
-                </div>
-                <div>
-                    <span>Descrição</span>
-                    <p>Detalhe</p>
-                </div>
-
-                <div class="separador"></div>
-                <div>
-                    <img src="images\modalidade.png" alt="modalidade2">
-                </div>
-                <div>
-                    <span>Descrição</span>
-                    <p>Detalhe</p>
-                </div>
+            <!-- <label>E-mail:</label> -->
+            <div>
+                <input placeholder="Digite o seu e-mail">
             </div>
 
-            <div class="linha">
-                <div>
-                    <img src="images\modalidade.png" alt="modalidade1">
-                </div>
-                <div>
-                    <span>Descrição</span>
-                    <p>Detalhe</p>
-                </div>
-
-                <div class="separador"></div>
-                    <div>
-                        <img src="images\modalidade.png" alt="modalidade2">
-                    </div>
-                    <div>
-                        <span>Descrição</span>
-                        <p>Detalhe</p>
-                    </div>
-            </div>
-        </section>
-
-
-        <!-- Section de Trofeus -->
-        <section>
-            <div class="trofeus">
-                <div>
-                    <img src="images/medalhasPrancheta-2.png" alt="Combate">
-                    <p>Combate</p>
-                    <p>Antweight (454g - 1lb)</p>
-                    <p>1º Lugar</p>
-                </div>
-
-                <div>
-                    <img src="images/medalhasPrancheta-3.png" alt="Sumô">
-                    <p>Sumô</p>
-                    <p>Mini-sumo - 500g (Auto)</p>
-                    <p>1º Lugar</p>
-                </div>
-
-                <div>
-                    <img src="images/medalhasPrancheta-4.png" alt="Hockey">
-                    <p>Hockey</p>
-                    <p>Hockey - Pro (6,8kg)</p>
-                    <p>1º Lugar</p>
-                </div>
+            <!-- <label>Assunto:</label> -->
+            <div>
+                <input placeholder="Assunto a ser tratado">
             </div>
 
-            <div class="trofeus2">
-                <div>
-                  <img src="images/medalhasPrancheta-2.png" alt="Combate">
-                  <p>Combate</p>
-                  <p>Antweight (454g - 1lb)</p>
-                  <p>1º Lugar</p>
-                </div>
-
-                <div>
-                  <img src="images/medalhasPrancheta-3.png" alt="Sumô">
-                  <p>Sumô</p>
-                  <p>Mini-sumo - 500g (Auto)</p>
-                  <p>1º Lugar</p>
-                </div>
-
-                <div>
-                  <img src="images/medalhasPrancheta-4.png" alt="Hockey">
-                  <p>Hockey</p>
-                  <p>Hockey - Pro (6,8kg)</p>
-                  <p>1º Lugar</p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Section de Contato (form e maps) -->
-        <section id="section-contato">
-            <div class="div-form">
-                <form>
-                    <label>Nome:</label>
-                    <div>
-                        <div>
-                            <input placeholder="First Name" class="input-name">
-                            <input placeholder="Last Name" class="input-name" id="input-last-name">
-                        </div>
-                    </div>
-
-                    <label>E-mail:</label>
-                    <div>
-                        <input placeholder="Digite o seu e-mail">
-                    </div>
-
-                    <label>Assunto:</label>
-                    <div>
-                        <input placeholder="Assunto a ser tratado">
-                    </div>
-
-                    <label>Mensagem:</label>
-                    <div>
-                        <textarea name="message" rows="8" cols="63" placeholder="Digite a sua mensagem"></textarea>
-                    </div>
-
-                    <div>
-                        <button type="button" name="button">ENVIAR</button>
-                    </div>
-                </form>
+            <!-- <label>Mensagem:</label> -->
+            <div>
+                <textarea name="message" rows="8" cols="63" placeholder="Digite a sua mensagem"></textarea>
             </div>
 
-            <div class="div-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467689.80167271144!2d-46.87618601864199!3d-23.682159138110755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1494881385848" width="500" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div>
+                <button type="button" name="button">Enviar</button>
             </div>
-        </section>
+        </form>
+    </div>
+</section>
 
 
-        <!-- Início do Footer -->
-        <footer>
-            <section>
-                <div class="div-footer-logo">
-                    <img src="images/Cubo-logo.png" alt="logo kimauanisso">
-                    <img src="images/google-logo.png" alt="logo kimauanisso">
-                    <img src="images/NASA-logo.png" alt="logo kimauanisso">
-                    <img src="images/Mastertech-logo.png" alt="logo kimauanisso">
-                </div>
-            </section>
-        </footer>
-    </body>
+<script src="script.js"></script>
+<script>
+// var slides = document.querySelectorAll('.div-images img');
+var textos = document.querySelectorAll('.div-texto pre');
+// var slideActive = 0;
+var textoActive = 0;
 
-    <script src="script.js"></script>
+// setInterval(trocarSlide, 3000);
+setInterval(trocarTexto, 5000);
+mover();
+setInterval(mover, 5000);
+</script>
+</body>
 </html>
