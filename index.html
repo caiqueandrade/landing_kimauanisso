@@ -6,27 +6,27 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+<!-- script para o menu smoothie -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
     <header>
         <section class="background" id="home">
-            <section class="menu">
-                <div class="div-menu-logo">
-                    <img class="menu-logo" src="images/logo-kimauanisso.png" alt="logo">
-                </div>
-
-                <div class="div-menu-nav">
+            <section class="section-menu">
+                <div class="div-menu">
                     <ul>
-                        <!-- <li><a href="index2.html">HOME</a></li> -->
-                        <li><a href="#modalidades">CATEGORIAS</a></li>
-                        <li><a href="#premios">PRÊMIOS</a></li>
-                        <li><a href="#video">VÍDEO</a></li>
-                        <li><a href="#contato">CONTATO</a></li>
+                        <div class="div-logo">
+                            <li><a href="#home"><img class="img-logo" src="images/logo-kimauanisso.png" alt="logo kmn"></a></li>
+                        </div>
+
+                        <div class="div-nav">
+                            <li><a href="#modalidades">CATEGORIAS</a></li>
+                            <li><a href="#premios">PRÊMIOS</a></li>
+                            <li><a href="#video">VÍDEOS</a></li>
+                            <li><a href="#contato">CONTATO</a></li>
+                        </div>
                     </ul>
                 </div>
             </section>
-        </section>
-    </header>
-
 
     <!-- INÍCIO DA SECTION TÍTULO -->
     <section class="section-titulo">
@@ -55,31 +55,12 @@
         <div id="progress">
             <div id="bar"></div>
         </div>
-
-            <!-- <h1 class="texto espacamento">Equipe</h1>
-            <h1 class="texto">Kimauánisso</h1>
-            <h1 class="texto">- Robotics Team</h1>
-            <h1 class="texto">website.</h1> -->
-
-            <!-- <h1 class="texto espacamento">Invest</h1>
-            <h1 class="texto">American</h1>
-            <h1 class="texto">- Robotics Group</h1>
-            <h1 class="texto">website.</h1> -->
         </div>
     </section>
 
+        </section>
+    </header>
 
-    <!-- INÍCIO DA SECTION SLIDER -->
-    <!-- <section class="section-slider">
-    <div class="div-images">
-    <h1 class="banner-texto active-texto">Winter Challenge 17</h1>
-    <h1 class="banner-texto">Teste2</h1>
-    <h1 class="banner-texto">Teste3</h1>
-    <img class="image active" src="images/banner-robot-fight.jpg" alt="foto 1">
-    <img class="image" src="images/banner-halo.jpg" alt="foto 2">
-    <img class="image" src="images/banner.jpg" alt="foto 3">
-</div>
-</section> -->
 
 
 <!-- INÍCIO DA SECTION MODALIDADES -->
@@ -112,17 +93,17 @@
     <h2>PRÊMIOS</h2>
     <div class="div-premios">
         <div>
-            <img src="images/poster01.jpg" alt="imagem poster01">
+            <img src="images/premios01.png" alt="imagem poster01">
             <p class="p-titulo">Muscle Wire Challenge</p>
             <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
         </div>
         <div>
-            <img src="images/poster02.jpg" alt="imagem poster02">
+            <img src="images/premios02.png" alt="imagem poster02">
             <p class="p-titulo">Sumô LEGO® 1kg</p>
             <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
         </div>
         <div>
-            <img src="images/poster03.jpg" alt="imagem poster03">
+            <img src="images/premios03.png" alt="imagem poster03">
             <p class="p-titulo">Fire-Fighting</p>
             <p class="p-descricao">Vamos colocar aqui um texto real ao mesmo tempo imaginário, tipo um número complexo</p>
         </div>
@@ -139,23 +120,19 @@
     <div class="div-form">
         <form>
             <h2>CONTATO</h2>
-            <!-- <label>Nome:</label> -->
             <p>Entre em contato para mais informações</p>
             <div>
                 <input placeholder="Nome" class="input-name">
             </div>
 
-            <!-- <label>E-mail:</label> -->
             <div>
                 <input placeholder="Digite o seu e-mail">
             </div>
 
-            <!-- <label>Assunto:</label> -->
             <div>
                 <input placeholder="Assunto a ser tratado">
             </div>
 
-            <!-- <label>Mensagem:</label> -->
             <div>
                 <textarea name="message" rows="8" cols="63" placeholder="Digite a sua mensagem"></textarea>
             </div>
@@ -168,17 +145,39 @@
 </section>
 
 
-<script src="script.js"></script>
-<script>
-// var slides = document.querySelectorAll('.div-images img');
-var textos = document.querySelectorAll('.div-texto pre');
-// var slideActive = 0;
-var textoActive = 0;
+    <script src="script.js"></script>
+    <script>
+        var textos = document.querySelectorAll('.div-texto pre');
+        var textoActive = 0;
+        setInterval(trocarTexto, 5000);
+        mover();
+        setInterval(mover, 5000);
 
-// setInterval(trocarSlide, 3000);
-setInterval(trocarTexto, 5000);
-mover();
-setInterval(mover, 5000);
-</script>
+        // SCRIPT SMOOTH SCROLLING
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
 </body>
 </html>
